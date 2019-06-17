@@ -1,0 +1,25 @@
+{
+  "name": "protractor_angular-mk",
+  "dependencies": {
+    "chromedriver": "^75.0.0",
+    "lodash": "^4.17.11",
+    "protractor": "^5.4.2",
+    "jasmine-data-provider": "2.2.0"
+  },
+  "version": "1.0.0",
+  "description": "test project, pakage json creation",
+  "main": "Actions.js",
+  "scripts": {
+    "e2e-test": "protractor test/protractor-conf.js",
+    "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
+    "webdriver-start": "./node_modules/protractor/bin/webdriver-manager start",
+    "protractor": "./node_modules/protractor configuration.js",
+    "start": "npm webdriver-update &&npm run webdriver-start"
+  },
+  "repository": {
+    "private": true
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}

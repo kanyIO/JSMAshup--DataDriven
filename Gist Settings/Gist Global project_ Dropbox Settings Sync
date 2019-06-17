@@ -1,0 +1,7 @@
+
+
+//here's how to set up https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+
+share the access token and Gist ID to donwload vscode settings to another vs editor.
+
+//Any changes made to the project here will be synced to drobox
