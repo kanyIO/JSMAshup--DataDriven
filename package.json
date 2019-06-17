@@ -16,6 +16,7 @@
     "webdriver-start": "./node_modules/protractor/bin/webdriver-manager start",
     "protractor": "./node_modules/protractor configuration.js",
     "smokeSuite": "./node_modules/protractor configuration.js --suite smoke",
+    "Regression": "./node_modules/protractor configuration.js --Regression",
     "start": "npm webdriver-update &&npm run webdriver-start"
   },
   "repository": {
