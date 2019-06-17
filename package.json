@@ -15,6 +15,7 @@
     "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
     "webdriver-start": "./node_modules/protractor/bin/webdriver-manager start",
     "protractor": "./node_modules/protractor configuration.js",
+    "smokeSuite": "./node_modules/protractor configuration.js --suite smoke",
     "start": "npm webdriver-update &&npm run webdriver-start"
   },
   "repository": {

@@ -15,6 +15,14 @@ onPrepare: function() {
         savePath: 'target/screenshots'
       })
     );
+},
+suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
+//smoke: ['Chainlocators.js', 'Dropdown.js'],
+Regression: ['ElementDatadriven.js']
+},
+// Options to be passed to Jasmine-node.
+jasmineNodeOpts: {
+  showColors: true, // Use colors in the command line report.
 }
 
 

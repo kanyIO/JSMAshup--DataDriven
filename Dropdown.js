@@ -16,7 +16,6 @@ it('Locators',function() {
      browser.get("https://juliemr.github.io/protractor-demo/");
       
      calc(3,5,"MULTIPLICATION");
-      
       calc(3,5,"DIVISION");
      calc(3,5,"DIVISION");
      calc(10,6,"ADDITION");
