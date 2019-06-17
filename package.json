@@ -4,7 +4,8 @@
     "chromedriver": "^75.0.0",
     "lodash": "^4.17.11",
     "protractor": "^5.4.2",
-    "jasmine-data-provider": "2.2.0"
+    "jasmine-data-provider": "2.2.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
   },
   "version": "1.0.0",
   "description": "test project, pakage json creation",
