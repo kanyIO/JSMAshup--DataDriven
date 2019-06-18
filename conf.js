@@ -1,12 +1,12 @@
 // to install package.json on project use  (npm init -f) in terminal.running npm init will run you through package. json set up
 // to install webdriver use npm run on any of the script comands in package.json.  e.g npm run webdriver-update / npm run protractor ..
 //chromeDriver:'../node_modules/chromedriver/bin/chromedriver',
+
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
-exports.config = {
-  directConnect: true,
+exports.config = {  
+  // directConnect: true,
 framework:'jasmine',
-
 specs: ['ElementDatadriven.js'],  
   //browser.driver.manager().window().maximize();
     onPrepare: function() {
@@ -16,10 +16,16 @@ specs: ['ElementDatadriven.js'],
       })
     );
 },
+suites :
+	{
+  Smoke : ['Dropdown.js','Alert_nonAngular.js'],
+  Interface: ['Chainlocators.js','Elementbasics.js'],
+	Regression : 'ElementDatadriven.js'
+	},
+
 // suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
 // //smoke: ['Chainlocators.js', 'Dropdown.js'],
-// Regression: ['ElementDatadriven.js']
-// },
+
 
 jasmineNodeOpts: { //Options to be passed to Jasmine-node.
   showColors: true, // Use colors in the command line report.

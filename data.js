@@ -19,13 +19,6 @@ SecondData:
 	result:"9"
 	
 },
-ThirdData:
-{
-	firstinput:"5",
-	secondinput:"2",
-	result:"7"
-	
-}
 
 	}
 
