@@ -5,8 +5,6 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
 framework:'jasmine',
 
-//specs: ['Chainlocators.js']  
-//noGlobals: true,
 specs: ['ElementDatadriven.js'],  
   //browser.driver.manager().window().maximize();
     onPrepare: function() {
@@ -17,11 +15,11 @@ specs: ['ElementDatadriven.js'],
     );
 },
 suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
-//smoke: ['Chainlocators.js', 'Dropdown.js'],
+//Smoke: ['Chainlocators.js', 'Dropdown.js'],
 Regression: ['ElementDatadriven.js']
 },
 
-jasmineNodeOpts: { // Options to be passed to Jasmine-node.
+jasmineNodeOpts: { //Options to be passed to Jasmine-node.
   showColors: true, // Use colors in the command line report.
 }
 

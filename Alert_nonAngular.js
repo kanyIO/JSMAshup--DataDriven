@@ -7,7 +7,7 @@ describe('Protractor alert steps',function() {
        browser.get("http://www.qaclickacademy.com/practice.php");
        element(by.id("confirmation")).click();
        browser.switchTo().alert().accept().then(function() {
-           browser.sleep(3000); 
+           browser.sleep(4000); 
         });
            });
         

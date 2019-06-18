@@ -1,27 +1,20 @@
 {
-  "name": "protractor_angular-mk",
+ "name": "protractor_angular-mk",
   "dependencies": {
     "chromedriver": "^75.0.0",
-    "lodash": "^4.17.11",
     "protractor": "^5.4.2",
     "jasmine-data-provider": "2.2.0",
     "protractor-jasmine2-html-reporter": "0.0.7"
   },
-  "version": "1.0.0",
-  "description": "test project, pakage json creation",
-  "main": "Actions.js",
-  "scripts": {
-    "e2e-test": "protractor test/protractor-conf.js",
-    "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
-    "webdriver-start": "./node_modules/protractor/bin/webdriver-manager start",
-    "protractor": "./node_modules/protractor configuration.js",
-    "smokeSuite": "./node_modules/protractor configuration.js --suite smoke",
-    "Regression": "./node_modules/protractor configuration.js --Regression",
-    "start": "npm webdriver-update &&npm run webdriver-start"
-  },
-  "repository": {
-    "private": true
-  },
+    "scripts": {
+     "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+     "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+     "protractor": "./node_modules/.bin/protractor configuration.js",
+     "SmokeSuite": "./node_modules/.bin/protractor configuration.js --suite Smoke",
+     "Regression": "./node_modules/.bin/protractor configuration.js --suite Regression",
+     "start": "npm run webdriver-update &&npm run webdriver-start &&npm run protractor"
+    
+   },
   "devDependencies": {
     "jasmine": "^3.4.0"
   }
