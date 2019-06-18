@@ -2,7 +2,9 @@
 // to install webdriver use npm run on any of the script comands in package.json.  e.g npm run webdriver-update / npm run protractor ..
 //chromeDriver:'../node_modules/chromedriver/bin/chromedriver',
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+
 exports.config = {
+  directConnect: true,
 framework:'jasmine',
 
 specs: ['ElementDatadriven.js'],  
@@ -14,13 +16,14 @@ specs: ['ElementDatadriven.js'],
       })
     );
 },
-suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
-//Smoke: ['Chainlocators.js', 'Dropdown.js'],
-Regression: ['ElementDatadriven.js']
-},
+// suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
+// //smoke: ['Chainlocators.js', 'Dropdown.js'],
+// Regression: ['ElementDatadriven.js']
+// },
 
 jasmineNodeOpts: { //Options to be passed to Jasmine-node.
   showColors: true, // Use colors in the command line report.
+  //defaultTimeoutInterval: 30000
 }
 
 
