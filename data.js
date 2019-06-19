@@ -20,8 +20,21 @@ SecondData:
 	
 },
 
+ThirdData:
+{
+	firstinput:"5",
+	secondinput:"2",
+	result:"7"
+	
+},
+FourthData:
+{
+	firstinput:"1",
+	secondinput:"9",
+	result:"10"
+	
+}
+
 	}
 
 	};
-
-
