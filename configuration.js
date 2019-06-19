@@ -16,10 +16,14 @@ specs: ['ElementDatadriven.js'],
       })
     );
 },
-suite: {  // adding multiple suite runners to test runner . - Add the same targets in configuration.js
-//smoke: ['Chainlocators.js', 'Dropdown.js'],
-Regression: ['ElementDatadriven.js']
-},
+suites :
+	{
+
+    Smoke : ['Dropdown.js','Alert_nonAngular.js'],
+  Interface: ['Chainlocators.js','Elementbasics.js'],
+	Regression : 'ElementDatadriven.js'
+	},
+
 
 jasmineNodeOpts: { // Options to be passed to Jasmine-node.
   showColors: true, // Use colors in the command line report.
