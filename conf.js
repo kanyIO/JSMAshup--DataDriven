@@ -18,7 +18,8 @@ specs: ['ElementDatadriven.js'],
 },
 suites :
 	{
-  Smoke : ['Dropdown.js','Alert_nonAngular.js'],
+
+    Smoke : ['Dropdown.js','Alert_nonAngular.js'],
   Interface: ['Chainlocators.js','Elementbasics.js'],
 	Regression : 'ElementDatadriven.js'
 	},
