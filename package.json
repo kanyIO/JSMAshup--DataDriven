@@ -12,6 +12,7 @@
      "protractor": "./node_modules/.bin/protractor conf.js",
      "Smoke": "./node_modules/.bin/protractor conf.js --suite Smoke",
      "Regression": "./node_modules/.bin/protractor conf.js --suite Regression",
+     "Unit": "./node_modules/.bin/protractor conf.js --suite Unit",
      "Interface": "./node_modules/.bin/protractor conf.js --suite Interface",
      "start": "npm run webdriver-update &&npm run webdriver-start &&npm run protractor"
     

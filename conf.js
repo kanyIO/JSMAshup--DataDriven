@@ -20,6 +20,7 @@ suites :
 	{
 
     Smoke: ['Dropdown.js','Alert_nonAngular.js'],
+    //Unit: 'Elementbasics0.js', //script issue when running 
   Interface: ['Chainlocators.js','Elementbasics.js'],
 	Regression : 'ElementDatadriven.js'
 	},
